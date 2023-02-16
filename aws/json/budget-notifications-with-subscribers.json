@@ -8,10 +8,6 @@
         },
         "Subscribers": [
             {
-                "Address": "jordanbrowne7@gmail.com",
-                "SubscriptionType": "EMAIL"
-            },
-            {
                 "Address": "mrjordanbrowne@gmail.com",
                 "SubscriptionType": "EMAIL"
             }
