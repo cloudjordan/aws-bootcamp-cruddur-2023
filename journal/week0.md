@@ -165,7 +165,7 @@ As I had already setup budgeting in the console, I deleted the 2 budgets I had m
 ```
 {
     "BudgetLimit": {
-        "Amount": "100",
+        "Amount": "10",
         "Unit": "USD"
     },
     "BudgetName": "Example Tag Budget",
@@ -200,5 +200,49 @@ As I had already setup budgeting in the console, I deleted the 2 budgets I had m
 
 ```
 
-aaa
+4. inside budget-notifications-with-subscribers.json I added the following code from the user guide:
+```
+[
+    {
+        "Notification": {
+            "ComparisonOperator": "GREATER_THAN",
+            "NotificationType": "ACTUAL", # The type of notification (e.g. actual, forecasted)
+            "Threshold": 80, # Threshold value for the notification to send
+            "ThresholdType": "PERCENTAGE" # Type e.g. percentage, absolute value etc.
+        },
+				# The list of subscribers for the notification
+        "Subscribers": [
+            {
+                "Address": "example@example.com",
+                "SubscriptionType": "EMAIL"
+            }
+        ]
+    }
+]
+```
+
+5. I stored my account ID in an environment variable using the following command:
+```
+export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+```
+6. To save the environment variable I used the following command:
+```
+gp env AWS_ACCOUNT_ID="ACCOUNT ID WENT HERE"
+```
+
+7. It now is saved in the GitPod environment variables.
+
+8. I then copied and pasted the following command (which included the Account ID environment variable) into the command line:
+```
+aws budgets create-budget \
+    --account-id $AWS_ACCOUNT_ID \
+    --budget file://aws/json/budget.json \
+    --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
+```
+
+9. Back in the aws console, the budget has now been created.
+
+I have included my username alias in the screenshot to prove it is my image. 
+<img src="assets/budget.png" width="1000">
+
 
