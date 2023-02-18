@@ -43,7 +43,6 @@ I have included my username alias in the screenshot to prove it is my image.
 <img src="assets/cloudwatch-alarm.png" width="1000">
 
 #### Budget
-
 AWS Budgets allows me to get alerted when I reach or am near my budget threshold. 
 
 Back in AWS Billing, go to budgets in the left panel and create new Budget. I then took the following.
@@ -57,6 +56,20 @@ I have included my username alias in the screenshot to prove it is my image.
 <img src="assets/budget.png" width="1000">
 
 
+### IAM User Account
+To create an IAM user I took the following steps. 
+
+1. Opened AWS IAM. And clicked Add users. 
+2. Chose the settings. i.e. for password and username and console access then clicked Next.
+3. Created a group to add the user to. This helps allows users permissions to access and use different services etc. I will add admin access. 
+4. Give it a name and assign it the relevant permission.
+5. Click Create user group. Once created check the box to make sure IAM account will be added to the group.
+6. Will take you to the summary page to confirm the settings you entered then can click Create. 
+7. Showed me the summary page with my credentials. 
+8. Account now created. 
+
+Account shows my username to prove this is my image. 
+<img src="assets/IAM-user.png" width="1000">
 
 
 
