@@ -8,7 +8,21 @@
 
 ### Billing Alerts and Budgets
 
+```
+
+```
+
 ### IAM and Account Security
 
 ### Setting up and using AWS CLI in Gitpod
+
+```
+
+```
+
+### AWS Organizations and Service Control Policies
+
+```
+
+```
 
