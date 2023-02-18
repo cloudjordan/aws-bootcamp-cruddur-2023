@@ -348,3 +348,6 @@ aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.js
 ```
 
 8. Alarm created and can see it in the aws cloudwatch console.
+
+<img src="assets/cloudwatch-alarm.png" width="1000">
+
