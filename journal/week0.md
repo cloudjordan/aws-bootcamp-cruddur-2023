@@ -4,7 +4,12 @@
 
 ### Conceptual Diagram
 
-![conceptual diagram](assets/conceptual diagram.png)
+For the first part of the homework I completed the conceptual diagram based on what was learned in the week 0 video lecture. 
+
+This diagram gives a conceptual overview of how an end user would be connected to the social media platform. 
+
+<img src="assets/conceptual-diagram.png" width="700" height="400">
+
 
 ### Architectural Diagram
 
