@@ -81,10 +81,70 @@ To create access keys for my IAM user I took the following steps.
 
 
 ### Setting up and using AWS CLI in Gitpod
+To install and use AWS CLI in Gitpod, I took the following steps. 
 
+1. Ran the following commands as shown in the aws documentation:
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+2. After installing, confirmed it was installed by running the following: aws --version which showed me the version of aws cli installed. 
+```
+gitpod /workspace $ aws --version
+aws-cli/2.9.23 Python/3.9.11 Linux/5.15.0-47-generic exe/x86_64.ubuntu.20 prompt/off
+```
+3. To setup environment variables for the AWS user account, used environment variables as demonstrated in the [user guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html). Copied these lines into a plain text file in GitPod:
+```
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION=""
+```
+4. To configure the credentials, I added the access key credentials (I generated earlier for the IAM account) to the environment variables I just created. Including adding a default region. Then copied each line into the terminal. 
+```
+export AWS_ACCESS_KEY_ID="KEY WENT HERE"
+export AWS_SECRET_ACCESS_KEY="KEY WENT HERE"
+export AWS_DEFAULT_REGION="REGION WENT HERE"
 ```
 
+5. Ran the command aws sts get-caller-identity. Which outputted:
 ```
+{
+    "UserId": "USER ID SHOWED HERE",
+    "Account": "ACCOUNT ID SHOWED HERE",
+    "Arn": "AMAZON RESOURCE NAME SHOWED HERE"
+}
+```
+
+6. To make sure everything I have been doing in GitPod will be saved if closing the window and opening again. Inside the .gitpod.yml template, I added the following task. 
+```
+tasks:
+  - name: aws-cli
+    env:
+			# environment variable to auto-complete aws cli typing commands on partial mode.
+      AWS_CLI_AUTO_PROMPT: on-partial
+		# installing the aws cli in our chosen directory
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
+```
+
+7.Next ran the following command in the terminal gp env  followed by each credential. This saves the credentials in a secure place in gitpod so our credentials will be available for use every time we launch GitPod.  
+```
+gp env AWS_ACCESS_KEY_ID="KEY WENT HERE"
+gp env AWS_SECRET_ACCESS_KEY="KEY WENT HERE"
+gp env AWS_DEFAULT_REGION="REGION WENT HERE"
+```
+
+8. In gitpod user settings, I could then see the environment variables I just made.
+
+<img src="assets/environment-variables.png" width="450">
+
+
+
 
 ### AWS Organizations and Service Control Policies
 
