@@ -143,7 +143,13 @@ gp env AWS_DEFAULT_REGION="REGION WENT HERE"
 
 <img src="assets/environment-variables.png" width="450">
 
+9. To commit the changes I just made, while in the workspace directory, I went to the source control panel on the left hand side of window. Entered a message for the change we made, then clicked commit. 
 
+10. A prompt window opened, clicked yes to stage changes. And clicked synch after the commit button changed.
+ 
+11. To confirm the changes have beed committed, went back to my github repo, opened the gitpod.yml file to check. Changes now are commited. 
+
+12. Now everytime I closed down the Gitpod environment and reopened it, AWS CLI will automatically install. 
 
 
 ### AWS Organizations and Service Control Policies
