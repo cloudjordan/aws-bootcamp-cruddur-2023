@@ -152,9 +152,53 @@ gp env AWS_DEFAULT_REGION="REGION WENT HERE"
 12. Now everytime I closed down the Gitpod environment and reopened it, AWS CLI will automatically install. 
 
 
-### AWS Organizations and Service Control Policies
+### Setting Up AWS Billing Alarm and Budget
+By default AWS is not giving my IAM account access to billing and budgeting. So in root account had to activate it.
+
+As I had already setup budgeting in the console, I deleted the 2 budgets I had made to not be charged when recreating my budgets in AWS CLI to prevent going over the free tier limit. 
+
+1. In GitPod created in a new folder in the side panel called “aws”. Within that folder created another folder called “json”. 
+
+2. Inside the json folder created 2 files: budget.json and budget-notifications-with-subscribers.json
+
+3. inside budget.json I added the following code from the aws cli reference user guide:
+```
+{
+    "BudgetLimit": {
+        "Amount": "100",
+        "Unit": "USD"
+    },
+    "BudgetName": "Example Tag Budget",
+    "BudgetType": "COST",
+    "CostFilters": {
+				# Filters for costs based on usage attributes (e.g. tags)
+        "TagKeyValue": [
+            "user:Key$value1",
+            "user:Key$value2"
+        ]
+    },
+		# Types of costs to include in the budget
+    "CostTypes": {
+        "IncludeCredit": true,
+        "IncludeDiscount": true,
+        "IncludeOtherSubscription": true,
+        "IncludeRecurring": true,
+        "IncludeRefund": true,
+        "IncludeSubscription": true,
+        "IncludeSupport": true,
+        "IncludeTax": true,
+        "IncludeUpfront": true,
+        "UseBlended": false
+    },
+		# The time period for the budget
+    "TimePeriod": {
+        "Start": 1477958399, 
+        "End": 3706473600
+    },
+    "TimeUnit": "MONTHLY"
+}```
 
 ```
 
-```
+aaa
 
