@@ -20,7 +20,8 @@ Next I created the logical architectural diagram. Here I demonstrate how the end
 ### Billing Alerts and Budgets
 For billing alerts, I did it using both methods; through the management console AND through AWS CLI. 
 
-To setup billing alerts in the AWS management console I went to cloudwatch and made sure I was in N.virginia us-east-1.
+#### CloudWatch Alarm
+To setup billing alarm in the AWS management console I went to cloudwatch and made sure I was in N.virginia us-east-1.
 
 In the side panel I went to Alarms > In alarm then clicked the Create alarm button. It then opend up a wizard to go through the steps of creating the alarm. Here are the steps I took:
 
@@ -35,7 +36,25 @@ In the side panel I went to Alarms > In alarm then clicked the Create alarm butt
 
 
 I have included my username alias in the screenshot to prove it is my image. 
-<img src="assets/cloudwatch-alarm.png" width="1000" height="250">
+<img src="assets/cloudwatch-alarm.png" width="1000">
+
+#### Budget
+
+AWS Budgets allows me to get alerted when I reach or am near my budget threshold. 
+
+Back in AWS Billing, go to budgets in the left panel and create new Budget. I then took the following.
+
+1. Clicked Create budget
+2. Choose your settings. I chose option for zero spend budget. This alerts me to any spend over $0.01
+3. Make sure to add your email address and set budget low. When done, click Create budget. 
+4. Budget now created. Can take up to 24 hours to populate all your spend data. 
+
+I have included my username alias in the screenshot to prove it is my image. 
+<img src="assets/budget.png" width="1000">
+
+
+
+
 
 
 ```
