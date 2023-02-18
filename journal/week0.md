@@ -2,6 +2,7 @@
 
 ## Required Homework
 
+
 ### Conceptual Diagram
 
 For the first part of the homework I completed the conceptual diagram based on what was learned in the week 0 video lecture. 
@@ -13,6 +14,7 @@ LINK: https://lucid.app/lucidchart/846115f0-36b3-46ba-8b8c-b64a45c0d407/edit?vie
 <img src="assets/conceptual-diagram.png" width="700" height="400">
 
 
+
 ### Architectural Diagram
 
 Next I created the logical architectural diagram. Here I demonstrate how the end user would be connected to the social media platform through AWS. 
@@ -21,8 +23,12 @@ Next I created the logical architectural diagram. Here I demonstrate how the end
 LINK: https://lucid.app/lucidchart/d2a2ef28-29fc-4f34-b9d4-1486ce61e5ec/edit?viewport_loc=-1463%2C-272%2C4118%2C2049%2C0_0&invitationId=inv_79a09a68-1011-47af-a2fa-a69b4ca19aeb
 <img src="assets/architectural-diagram.png" width="700" height="625">
 
+
+
 ### Billing Alerts and Budgets
 For billing alerts, I did it using both methods; through the management console AND through AWS CLI. 
+
+
 
 #### CloudWatch Alarm
 To setup billing alarm in the AWS management console I went to cloudwatch and made sure I was in N.virginia us-east-1.
@@ -42,6 +48,8 @@ In the side panel I went to Alarms > In alarm then clicked the Create alarm butt
 I have included my username alias in the screenshot to prove it is my image. 
 <img src="assets/cloudwatch-alarm.png" width="1000">
 
+
+
 #### Budget
 AWS Budgets allows me to get alerted when I reach or am near my budget threshold. 
 
@@ -54,6 +62,7 @@ Back in AWS Billing, go to budgets in the left panel and create new Budget. I th
 
 I have included my username alias in the screenshot to prove it is my image. 
 <img src="assets/budget.png" width="1000">
+
 
 
 ### IAM User Account
@@ -71,6 +80,8 @@ To create an IAM user I took the following steps.
 Account shows my username to prove this is my image. 
 <img src="assets/IAM-user.png" width="1000">
 
+
+
 ### IAM User Access Keys
 To create access keys for my IAM user I took the following steps. 
 
@@ -78,6 +89,7 @@ To create access keys for my IAM user I took the following steps.
 2. Clicked on Access Keys and selected the option for where the access keys are intended to be used. As will be using them for the CLI, selected that option. 
 3. On the next screen can give an optional description for access key then click **Create key**. 
 4. Then showed me a page with my access key and secret key. 
+
 
 
 ### Setting up and using AWS CLI in Gitpod
@@ -132,7 +144,7 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
 ```
 
-7.Next ran the following command in the terminal gp env  followed by each credential. This saves the credentials in a secure place in gitpod so our credentials will be available for use every time we launch GitPod.  
+7. Next ran the following command in the terminal gp env  followed by each credential. This saves the credentials in a secure place in gitpod so our credentials will be available for use every time we launch GitPod.  
 ```
 gp env AWS_ACCESS_KEY_ID="KEY WENT HERE"
 gp env AWS_SECRET_ACCESS_KEY="KEY WENT HERE"
@@ -150,6 +162,7 @@ gp env AWS_DEFAULT_REGION="REGION WENT HERE"
 11. To confirm the changes have beed committed, went back to my github repo, opened the gitpod.yml file to check. Changes now are commited. 
 
 12. Now everytime I closed down the Gitpod environment and reopened it, AWS CLI will automatically install. 
+
 
 
 ### Setting Up AWS Billing Alarm and Budget
