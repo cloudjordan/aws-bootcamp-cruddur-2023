@@ -71,14 +71,14 @@ To create an IAM user I took the following steps.
 Account shows my username to prove this is my image. 
 <img src="assets/IAM-user.png" width="1000">
 
+### IAM User Access Keys
+To create access keys for my IAM user I took the following steps. 
 
+1. In IAM under Users, selecting the user, then security credentials tab you can create various secrutiy credentials for the user, such as Access Keys, password and MFA.
+2. Clicked on Access Keys and selected the option for where the access keys are intended to be used. As will be using them for the CLI, selected that option. 
+3. On the next screen can give an optional description for access key then click **Create key**. 
+4. Then showed me a page with my access key and secret key. 
 
-
-```
-
-```
-
-### IAM and Account Security
 
 ### Setting up and using AWS CLI in Gitpod
 
