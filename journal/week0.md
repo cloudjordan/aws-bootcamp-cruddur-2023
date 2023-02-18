@@ -4,6 +4,8 @@
 
 ### Conceptual Diagram
 
+![conceptual diagram](assets/conceptual diagram.png)
+
 ### Architectural Diagram
 
 ### Billing Alerts and Budgets
