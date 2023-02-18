@@ -13,6 +13,10 @@ This diagram gives a conceptual overview of how an end user would be connected t
 
 ### Architectural Diagram
 
+Next I created the logical architectural diagram. Here I demonstrate how the end user would be connected to the social media platform through AWS. 
+
+<img src="assets/architectural-diagram.png" width="700" height="625">
+
 ### Billing Alerts and Budgets
 
 ```
