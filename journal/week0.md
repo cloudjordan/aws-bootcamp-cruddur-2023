@@ -8,6 +8,8 @@ For the first part of the homework I completed the conceptual diagram based on w
 
 This diagram gives a conceptual overview of how an end user would be connected to the social media platform. 
 
+
+LINK: https://lucid.app/lucidchart/846115f0-36b3-46ba-8b8c-b64a45c0d407/edit?viewport_loc=-537%2C-453%2C2988%2C1486%2C0_0&invitationId=inv_53e0172b-baf8-4629-9e1c-092ae10463ef
 <img src="assets/conceptual-diagram.png" width="700" height="400">
 
 
@@ -15,6 +17,8 @@ This diagram gives a conceptual overview of how an end user would be connected t
 
 Next I created the logical architectural diagram. Here I demonstrate how the end user would be connected to the social media platform through AWS. 
 
+
+LINK: https://lucid.app/lucidchart/d2a2ef28-29fc-4f34-b9d4-1486ce61e5ec/edit?viewport_loc=-1463%2C-272%2C4118%2C2049%2C0_0&invitationId=inv_79a09a68-1011-47af-a2fa-a69b4ca19aeb
 <img src="assets/architectural-diagram.png" width="700" height="625">
 
 ### Billing Alerts and Budgets
