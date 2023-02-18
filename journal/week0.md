@@ -259,3 +259,40 @@ I have included my username alias in the screenshot to prove it is my image.
 <img src="assets/budget.png" width="1000">
 
 
+#### Creating a Billing Alarm in AWS CLI
+
+1. First I need to setup SNS topic before I create an alarm. To do so used the following command:
+```
+aws sns create-topic --name billing-alarm
+```
+
+Topic created:
+```
+gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws sns create-topic --name billing-alarm
+{
+    "TopicArn": "arn:aws:sns:ca-central-1:123456789010:billing-alarm"
+}
+```
+
+2. next I input this command:
+```
+aws sns subscribe \
+    --topic-arn="arn:aws:sns:ca-central-1:ACCCOUNT_ID_GOES_HERE:billing-alarm" \
+    --protocol=email \
+    --notification-endpoint=your@email.com
+```
+
+Output was:
+```
+{
+    "SubscriptionArn": "pending confirmation"
+}
+```
+
+3. Received a confirmation email in my mailbox. Once clicked to confirm, a new window opened confirming my subscription. 
+
+4. In AWS console, SNS topic created in the region that was configured (ca-central-1):
+
+<img src="assets/SNS-topic.png" width="1000">
+
+
