@@ -19,11 +19,32 @@ This week was my first time using containirzation. As something breifly touched 
 ## Setting Up Docker Containers in the Gitpod Workspace
 
 
-Using Gitpod, the first step I took was installing Docker, as it was not in the side bar. 
+With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and entered the following code. 
 
-Created a new Docker file in the the backend-flask folder by naming it Dockerfile. 
+```
+# Use the Python 3.10 slim image as the base
+FROM python:3.10-slim-buster
 
+# Set the working directory
+WORKDIR /backend-flask
 
+# Copy the dependencies file and install dependencies
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+# Copy the application code
+COPY . .
+
+# Set the Flask environment variable to development
+ENV FLASK_ENV=development
+
+# Expose the specified port
+EXPOSE ${PORT}
+
+# Start the Flask application
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+
+```
 
 
 
