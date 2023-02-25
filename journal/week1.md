@@ -19,7 +19,7 @@ This week was my first time using containirzation. As something breifly touched 
 ## Setting Up Docker Containers in the Gitpod Workspace
 
 
-With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and entered the following code. 
+With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and used the following code to create my docker container. 
 
 ```
 # Use the Python 3.10 slim image as the base
