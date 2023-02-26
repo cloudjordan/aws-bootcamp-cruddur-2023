@@ -67,7 +67,7 @@ Link to my Lucid Chart Diagram: https://lucid.app/lucidchart/fa37464f-661f-4279-
 
 <br>
 
-From /workspace/aws-bootcamp-cruddur-2023, I navigated to the backend-flask folder. To get the application to run, I need to add some environment variables for the frontend and backend. I then started the flask application as shown below. 
+To test the API endpoint, from `/workspace/aws-bootcamp-cruddur-2023`, I navigated to the backend-flask folder. To get it to run, I need to add some temp environment variables for the frontend and backend. I then started the flask application as shown below. 
 
 ```
 # Change directory
@@ -90,23 +90,12 @@ I then unloacked the port to make it public in the "PORTS" tab, then clicked the
 <img src="assets/port-JSON-data.png" width="500">
 </p>
 
+#### Troubleshooting the backend
+<p>I ran into issues the first time round where upon opening the port URL I received a "Not Found" error where the URL was not found on the server.<p>
 
-
-
-
-Inside the backend-flask directory in my host environment, I installed flask and the other necessary python packages needed for the application. Then started the application with the last line of code listed below:
-
-```
-# Changed directory to workspace directory
-/workspace/aws-bootcamp-cruddur-2023 (main) $ cd backend-flask/
-
-# Installed required python packages including flask from my requirements.txt file.  
-pip3 install -r requirements.txt
-
-# Ran the flask application listening on port 4567
-python3 -m flask run --host=0.0.0.0 --port=4567
-
-```
+<p>The server was running and accepting requests but they were returning a 404 HTTP status code. This was resolved by adding the temporary environment vairables I mentioned earlier. Now that it is working, I deleted these temporary envuronment variables.<p>
+  
+ 
 
 
 
