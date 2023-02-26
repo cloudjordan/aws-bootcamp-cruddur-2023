@@ -357,3 +357,5 @@ Now when I open up the backend port URL and append the `/api/activities/notifica
 <p align="center">
   <img src="activites-notification-endpoint.png" width="500">
 </p>
+
+
