@@ -84,7 +84,7 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 cd ..
 ```
 
-I then unloacked the port to make it public in the "PORTS" tab, then clicked the port URL and added the extension needed `/api/activities/home` and was able to see the JSON data for the backend as show below: 
+I then unlocked the port to make it public in the "PORTS" tab, then clicked the port URL and added the extension needed `/api/activities/home` and was able to see the JSON data for the backend as show below: 
 
 <p align="center">
 <img src="assets/port-JSON-data.png" width="500">
