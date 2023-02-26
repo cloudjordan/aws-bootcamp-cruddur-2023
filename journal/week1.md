@@ -19,7 +19,7 @@ This week was my first time using containirzation. As something breifly touched 
 ## Setting Up Docker Containers in the Gitpod Workspace
 
 
-With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and used the following code to create my docker container. I created a diagram in lucid charts which is shown below, to break down what is happening here. 
+With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and used the following code to create my docker container. I created a diagram in lucid charts which is shown below, to break down what is happening here: 
 
 ```
 # Use the Python 3.10 slim image as the base
@@ -59,6 +59,20 @@ Link to my Lucid Chart Diagram: https://lucid.app/lucidchart/fa37464f-661f-4279-
 </p>
 
 <br>
+
+Inside the backend-flask directory in my host environment, I installed flask and the other necessary python packages needed for the application. Then started the application with the last line of code listed below:
+
+```
+# Changed directory to workspace directory
+/workspace/aws-bootcamp-cruddur-2023 (main) $ cd backend-flask/
+
+# Installed required python packages including flask from my requirements.txt file.  
+pip3 install -r requirements.txt
+
+# Ran the flask application listening on port 4567
+python3 -m flask run --host=0.0.0.0 --port=4567
+
+```
 
 
 
