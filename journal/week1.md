@@ -247,6 +247,36 @@ In the `/backend-flask` folder, I opened the openapi-3.0.yml file. I then opened
 </p>
 
 
+Created a new line to add the path name. Changed the path name to api/activities/notifications:
 
+```
+# From this
+/name:
+  get:
 
+# To this
+/api/activities/notifications:
+  get:
+```
+
+This is the code I made changes to:
+
+```
+/api/activities/notifications:
+    get:
+      description: 'Return a feed of activity for everyone I follow'
+      tags:
+        - activities
+      parameters: []
+      responses:
+        '200':
+          description: Returns an array of activies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Activity'
+                  
+```
 
