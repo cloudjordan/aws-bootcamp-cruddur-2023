@@ -354,8 +354,6 @@ Then below that, I added the return function to return these results when the no
 
 Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data:
 
-<p align="center">
-  <img src="activ-notiendpoint.jpg">
-</p>
+
 
 
