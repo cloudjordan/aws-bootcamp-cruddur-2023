@@ -240,7 +240,7 @@ To resolve this, I needed to make some changes to the code and add an api endpoi
   <img src="assets/cruddur-notification-error.png">
 </p>
 
-In the `/backend-flask` folder, I opened the openapi-3.0.yml file. I then opened API side panel in Gitpod. In the paths section, clicked the three dots to add new path for our notifications api endpoint.  
+In the `/backend-flask` folder, I opened the openapi-3.0.yml file. I then opened API side panel in Gitpod. In the paths section, clicked the three dots to add new path for our notifications api endpoint. This navigated to the relevant part of the YAML file so I can make the needed changes. 
 
 <p align="center">
   <img src="assets/openapi-add-new-path.png" width="500">
