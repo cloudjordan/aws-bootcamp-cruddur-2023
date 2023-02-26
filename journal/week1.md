@@ -4,19 +4,19 @@ This week was my first time using containirzation. As something breifly touched 
 
 | TASKS COMPLETED |
 | :-------------- |
-| Setting up Docker Containers |
-| Setting up the backend API with Docker Compose |
-| Setting up The Frontend Application with Docker Compose |
-| Troubleshooting Issues |
-| Installing Dynamo DB |
-| Installing PostgresSQL |
+| Setting Up Docker Containers in the Gitpod Workspace |
+| Setting Up The Backend of The Social Media Application |
+| |
+| |
+| |
+| |
 | Container Security Considerations |
 | Learning About Cloud Roles |
 
 <br>
 
 
-## Setting Up Docker Containers in the Gitpod Workspace
+## 1. Setting Up Docker Containers in the Gitpod Workspace
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
@@ -224,4 +224,9 @@ Now I have ports for the front end code and back end. With both ports unlocked/s
 <p align="center">
   <img src="assets/ports.png" >
 </p>
+<br>
+
+
+## 2. Setting Up The Backend of The Social Media Application
+
 
