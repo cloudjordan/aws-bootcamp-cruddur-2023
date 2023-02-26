@@ -228,4 +228,5 @@ Now I have ports for the front end code and back end. With both ports unlocked/s
 
 ## 2. Setting Up The Backend of The Social Media Application
 
+Clicking on the URL assigned to por 3000 opens up the frontend application. After creating user credentials and signing in, I clicked on the "**Notifications**" button in the side panel on the left. This took me to a page showing a 404 HTTP error code. To resolve this, I needed to make some changes to the code. 
 
