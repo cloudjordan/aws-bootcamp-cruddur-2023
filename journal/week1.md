@@ -23,7 +23,7 @@ This week was my first time using containirzation. As something breifly touched 
   
 <p>This is the set of instructions I am using to build the Docker image. It is a self-contained piece of software that is used to run the image.<p>
 
-<p>This means that anyone can use the image without having to make any changes to it. Regardless of the operating system being used, the Docker image will run.<p>
+<p>This means that anyone can use the image without having to make any changes to it. Regardless of the operating system being used, the Docker image will run:<p>
 
 ```
 # Use the Python 3.10 slim image as the base
@@ -67,7 +67,7 @@ Link to my Lucid Chart Diagram: https://lucid.app/lucidchart/fa37464f-661f-4279-
 
 <br>
 
-To test the API endpoint, from `/workspace/aws-bootcamp-cruddur-2023`, I navigated to the backend-flask folder. To get it to run, I need to add some temp environment variables for the frontend and backend. I then started the flask application as shown below. 
+To test the API endpoint, from `/workspace/aws-bootcamp-cruddur-2023`, I navigated to the backend-flask folder. To get it to run, I need to add some temp environment variables for the frontend and backend. I then started the flask application as shown below:
 
 ```
 # Change directory
@@ -84,7 +84,7 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 cd ..
 ```
 
-I then unloacked the port to make it public in the "PORTS" tab, then clicked the port URL and added the extension needed `/api/activities/home` and was able to see the JSON data for the backend as show below. 
+I then unloacked the port to make it public in the "PORTS" tab, then clicked the port URL and added the extension needed `/api/activities/home` and was able to see the JSON data for the backend as show below: 
 
 <p align="center">
 <img src="assets/port-JSON-data.png" width="500">
@@ -93,9 +93,21 @@ I then unloacked the port to make it public in the "PORTS" tab, then clicked the
 #### Troubleshooting the backend
 <p>I ran into issues the first time round where upon opening the port URL I received a "Not Found" error where the URL was not found on the server.<p>
 
-<p>The server was running and accepting requests but they were returning a 404 HTTP status code. This was resolved by adding the temporary environment vairables I mentioned earlier. Now that it is working, I deleted these temporary envuronment variables.<p>
+<p>The server was running and accepting requests but they were returning a 404 HTTP status code. This was resolved by adding the temporary environment vairables I mentioned earlier.<p> 
   
+<p>Now that it is working, I removed these temporary environment variables using the following command:<p>
+  
+  ```
+unset FRONTEND_URL
+unset BACKEND_URL  
+  ```
+<br>
+<p>Back in the main directory `gitpod /workspace/aws-bootcamp-cruddur-2023 (main)`, I ran the following code to build the container from the set of instructions I have set in the Dockerfile:<p>
  
+```
+docker build -t  backend-flask ./backend-flask  
+```
+  
 
 
 
