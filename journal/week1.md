@@ -46,7 +46,7 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 
 ```
 - The Gitpod host environment is a virtual machine running Linux.
-- The workspace directory "/backend-flask" is located within the Gitpod host environment.
+- The workspace directory `/backend-flask` is located within the Gitpod host environment.
 - The Docker container is a sub-environment created within the Gitpod host environment, using the Docker engine installed on the host.
 - The guest OS is the operating system running inside the Docker container.
 - The Docker container has a duplicate copy of the "/backend-flask" directory from the host environment, mounted as a volume inside the container.
@@ -59,6 +59,31 @@ Link to my Lucid Chart Diagram: https://lucid.app/lucidchart/fa37464f-661f-4279-
 </p>
 
 <br>
+
+From /workspace/aws-bootcamp-cruddur-2023, I navigated to the backend-flask folder. To get the application to run, I need to add some environment variables for the frontend and backend. I then started the flask application as shown below. 
+
+```
+# Change directory
+cd backend-flask
+
+# Add environment variables
+export FRONTEND_URL="*"
+export BACKEND_URL="*"
+
+# Run flask
+python3 -m flask run --host=0.0.0.0 --port=4567
+
+# Go back to main project directory
+cd ..
+```
+
+I then unloacked the port to make it public in the "PORTS" tab, then clicked the port URL and added the extension needed `/api/activities/home` and was able to see the JSON data for the backend. 
+
+
+
+
+
+
 
 Inside the backend-flask directory in my host environment, I installed flask and the other necessary python packages needed for the application. Then started the application with the last line of code listed below:
 
