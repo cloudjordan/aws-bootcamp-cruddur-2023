@@ -181,7 +181,12 @@ CMD ["npm", "start"]
 
 I created a `docker-compose.yml` file in my root directory. This allows me to define and run multiple Docker containers as a single application.
 
-As I have a Flask backend and a Node.js frontend, each running in its own Docker container. Instead of manually starting each container with its own docker run command and setting up the necessary network connections and environment variables, I am using a `docker-compose` file.
+<p align="center">
+  <img src="assets/all-directories.png" width="500">
+</p>
+
+
+As I have a Flask backend and a Node.js frontend, each running in its own Docker container. Instead of manually starting each container with its own docker run command and setting up the necessary network connections and environment variables, I am using a `docker-compose` file:
 
 ```
 version: "3.8"
@@ -211,3 +216,12 @@ networks:
     driver: bridge
     name: cruddur
 ```
+
+<p>To start the frontend and backend services I have configured in this file, I used the `docker compose up` command. It is doing a docker build and docker run on both the containers I created, while also configuring the environment variables and mounting etc.<p>
+  
+Now I have ports for the front end code and back end. With both ports unlocked/set to public, I can now view the URLs.  
+  
+<p align="center">
+  <img src="assets/ports.png" >
+</p>
+
