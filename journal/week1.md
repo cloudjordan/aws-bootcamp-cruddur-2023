@@ -352,8 +352,8 @@ Then below that, I added the return function to return these results when the no
  return results
 ```
 
-Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data:
+Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data. 
 
 
-
+## 3. Setting Up The Frontend of The Social Media Application
 
