@@ -113,8 +113,18 @@ docker build -t  backend-flask ./backend-flask
   
 The image has now been created and is vsible under the image section in Gitpod. 
 
-  <p align="center">
+<p align="center">
   <img src="assets/docker-image.png" width="500">
 </p>
 
+With the image created, I ran the following command to create a container and run an instance of the image inside of it:
 
+```
+docker run --rm -p 4567:4567 -it backend-flask
+```
+
+As shown, the container is now created. I then opened up a new shell for the continer, using the "Attach Shell" option from the dropdown list:
+
+<p align="center">
+  <img src="assets/docker-container.png" width="500">
+</p>
