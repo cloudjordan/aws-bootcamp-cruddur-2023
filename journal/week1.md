@@ -101,13 +101,17 @@ I then unloacked the port to make it public in the "PORTS" tab, then clicked the
 unset FRONTEND_URL
 unset BACKEND_URL  
   ```
-<br>
-<p>Back in the main directory `gitpod /workspace/aws-bootcamp-cruddur-2023 (main)`, I ran the following code to build the container from the set of instructions I have set in the Dockerfile:<p>
+
+
+Back in the main directory `gitpod /workspace/aws-bootcamp-cruddur-2023 (main)` I ran the following code to build the container from the set of instructions I have set in the Dockerfile. This causes Docker to build the image using the set of instructions listed in the Dockerfile:
  
 ```
+  
 docker build -t  backend-flask ./backend-flask  
+  
 ```
   
+The image has now been created and is vsible under the image section in Gitpod. 
 
 
 
