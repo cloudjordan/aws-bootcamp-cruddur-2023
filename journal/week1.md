@@ -101,7 +101,8 @@ I then unloacked the port to make it public in the "PORTS" tab, then clicked the
 unset FRONTEND_URL
 unset BACKEND_URL  
   ```
-
+---
+#### Container setup for the backend
 
 Back in the main directory `gitpod /workspace/aws-bootcamp-cruddur-2023 (main)` I ran the following code to build the container from the set of instructions I have set in the Dockerfile. This causes Docker to build the image using the set of instructions listed in the Dockerfile:
  
@@ -123,8 +124,31 @@ With the image created, I ran the following command to create a container and ru
 docker run --rm -p 4567:4567 -it backend-flask
 ```
 
-As shown, the container is now created. I then opened up a new shell for the continer, using the "Attach Shell" option from the dropdown list:
+As shown, the container is now created:
 
 <p align="center">
   <img src="assets/docker-container.png" width="500">
 </p>
+
+
+As I will need frontend and backend URL environment variables, I added the following code:
+```
+set FRONTEND_URL='*'
+set BACKEND_URL='*'
+docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
+docker run --rm -p 4567:4567 -it  -e FRONTEND_URL -e BACKEND_URL backend-flask
+unset FRONTEND_URL="*"
+unset BACKEND_URL="*"
+```
+
+Confirmed the container was running by using the `docker ps` command which output the following:
+```
+
+CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+96f1185b4de8   backend-flask   "python3 -m flask ru…"   9 minutes ago   Up 9 minutes   0.0.0.0:4567->4567/tcp, :::4567->4567/tcp   magical_bouman
+
+```
+---
+#### Container setup for the frontend
+
+
