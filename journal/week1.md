@@ -151,4 +151,31 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS  
 ---
 #### Container setup for the frontend
 
+Changed directory into front end directory `cd frontend-react-js/`
+
+```
+gitpod /workspace/aws-bootcamp-cruddur-2023/frontend-react-js (main) $
+```
+
+Installed node.js packages using: `npm i`. Frontend is using node.js
+
+Once installed, in `frontend-react-js` directory I created a new `Dockerfile` and added the following instructions to it. Similar to how I did before:
+```
+FROM node:16.18
+
+ENV PORT=3000
+
+COPY . /frontend-react-js
+
+WORKDIR /frontend-react-js
+
+RUN npm install
+
+EXPOSE ${PORT}
+
+CMD ["npm", "start"]
+```
+
+---
+#### Managing multiple containers with docker-compose 
 
