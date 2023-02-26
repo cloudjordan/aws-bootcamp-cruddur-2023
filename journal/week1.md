@@ -4,14 +4,13 @@ This week was my first time using containirzation. As something breifly touched 
 
 | TASKS COMPLETED |
 | :-------------- |
-| Setting Up Docker Containers in the Gitpod Workspace |
-| Setting Up The Backend of The Social Media Application |
-| |
-| |
-| |
-| |
-| Container Security Considerations |
-| Learning About Cloud Roles |
+| 1. Setting Up Docker Containers in the Gitpod Workspace |
+| 2. Setting Up The Backend of The Social Media Application |
+| 3. Setting Up The Frontend of The Social Media Application |
+| 4. Troubleshooting |
+| 5. Installing DynamoDB and PostgresSQL |
+| 6. Container Security Considerations |
+| 7. Learning About Cloud Roles |
 
 <br>
 
