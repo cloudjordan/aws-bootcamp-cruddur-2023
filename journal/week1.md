@@ -234,9 +234,19 @@ After unlocking the port, clicking on the URL assigned to port 3000 opens up the
   <img src="assets/frontend-app.png">
 </p>
 
-To resolve this, I needed to make some changes to the code. 
+To resolve this, I needed to make some changes to the code and add an api endpoint for the Notifications button. 
 
 <p align="center">
   <img src="assets/cruddur-notification-error.png">
 </p>
+
+In the `/backend-flask` folder, I opened the openapi-3.0.yml file. I then opened API side panel in Gitpod. In the paths section, clicked the three dots to add new path for our notifications api endpoint.  
+
+<p align="center">
+  <img src="assets/openapi-add-new-path.png" width="500">
+</p>
+
+
+
+
 
