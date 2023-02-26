@@ -280,3 +280,75 @@ This is the code I made changes to:
                   
 ```
 
+I then went back over to the `/backend-flask` folder to define a new endpoint. Inside the folder, I opened the the “app.py” file and added the following function. 
+
+```
+@app.route("/api/activities/notifications", methods=['GET'])
+def data_notifications():
+  data = NotificationActivities.run()
+  return data, 200
+```
+
+In the /backend-flask/services folder I created a Python file named "notifications_activities". Back in the app.py script, I imported this new file using the following code:
+
+```
+from services.notifications_activities import *
+```
+
+Breaking the code up into several files like this, makes implementing a micro-services approach easier. As opposed to if all the code was a monolith. 
+
+In the notifications_activities Python file, added the following code:
+```
+from datetime import datetime, timedelta, timezone
+
+class NotificationsActivities:
+  def run():
+    now = datetime.now(timezone.utc).astimezone()
+```
+Now I have matched the name of the class to the name of the value assigned to the data variable created in the “app.py” file for the Notifications function we created earlier as shown below. 
+
+<p align="center">
+  <img src="assets/NotificationsActivies-class.png">
+</p>
+
+```
+This code enables pulling live data (using the now method from the “datetime” module we imported) from the 
+latest activities of the other user accounts we follow on cruddur. 
+
+In “app.py” this notifications file was imported when I used the function: from 
+services.notifications_activities import *
+
+Then further down in the code of “app.py” we define a function called data_notifications which has a 
+variable that stores the notification function.
+```
+
+Next I added the following nested list into the “notifications_activities.py” file in the “run” function:
+```
+results = [{
+      'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
+      'handle':  'midnight eclipse',
+      'message': 'I am a midnight unicorn',
+      'created_at': (now - timedelta(days=2)).isoformat(),
+      'expires_at': (now + timedelta(days=5)).isoformat(),
+      'likes_count': 5,
+      'replies_count': 1,
+      'reposts_count': 0,
+      'replies': [{
+        'uuid': '26e12864-1c26-5c3a-9658-97a10f8fea67',
+        'reply_to_activity_uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
+        'handle':  'Worf',
+        'message': 'This post has no honor!',
+        'likes_count': 0,
+        'replies_count': 0,
+        'reposts_count': 0,
+        'created_at': (now - timedelta(days=2)).isoformat()
+      }],   
+    }]
+```
+
+Then below that, I added the return function to return these results when the notification activities function gets executed:
+
+```
+ return results
+```
+
