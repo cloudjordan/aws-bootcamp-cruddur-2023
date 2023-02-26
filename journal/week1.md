@@ -113,5 +113,8 @@ docker build -t  backend-flask ./backend-flask
   
 The image has now been created and is vsible under the image section in Gitpod. 
 
+  <p align="center">
+  <img src="assets/docker-image.png" width="500">
+</p>
 
 
