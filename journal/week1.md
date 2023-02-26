@@ -19,7 +19,11 @@ This week was my first time using containirzation. As something breifly touched 
 ## Setting Up Docker Containers in the Gitpod Workspace
 
 
-With Docker installed in Gitpod, I created a new Docker file in the the backend-flask folder and used the following code to create my docker container. I created a diagram in lucid charts which is shown below, to break down what is happening here: 
+<p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
+  
+<p>This is the set of instructions I am using to build the Docker image. It is a self-contained piece of software that is used to run the image.<p>
+
+<p>This means that anyone can use the image without having to make any changes to it. Regardless of the operating system being used, the Docker image will run.<p>
 
 ```
 # Use the Python 3.10 slim image as the base
@@ -45,6 +49,9 @@ EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 
 ```
+
+I created a diagram in lucid charts which is shown below, to break down what is happening here: 
+<br>
 - The Gitpod host environment is a virtual machine running Linux.
 - The workspace directory `/backend-flask` is located within the Gitpod host environment.
 - The Docker container is a sub-environment created within the Gitpod host environment, using the Docker engine installed on the host.
