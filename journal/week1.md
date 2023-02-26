@@ -45,6 +45,20 @@ EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 
 ```
+- The Gitpod host environment is a virtual machine running Linux.
+- The workspace directory "/backend-flask" is located within the Gitpod host environment.
+- The Docker container is a sub-environment created within the Gitpod host environment, using the Docker engine installed on the host.
+- The guest OS is the operating system running inside the Docker container.
+- The Docker container has a duplicate copy of the "/backend-flask" directory from the host environment, mounted as a volume inside the container.
+<br>
+Link to my Lucid Chart Diagram: https://lucid.app/lucidchart/fa37464f-661f-4279-86d8-bd6aa036a189/edit?viewport_loc=-78%2C-208%2C3196%2C1598%2C0_0&invitationId=inv_9b9bdea1-6c15-4aa6-ba67-c124cdcadb30
+<br>
+<br>
+<p align="center">
+  <img src="assets/docker-diagram.png" width="500">
+</p>
 
-docker-diagram.png
+<br>
+
+
 
