@@ -424,7 +424,7 @@ Here I've listed a summary of the things I learned during Ashish's bootcamp sess
 - Designing an application or service with container security in mind can minimize the impact of a breach.
 - Containers enable fast deployment and deprovisioning of machines, so security needs to keep up with the same speed.
 
-#### ### **Security Best Practices**
+#### **Security Best Practices**
 
 <p>To ensure the security of my containers, Its good practice for me to keep my software updated with the latest security patches, run Docker daemon and containers in non-root user mode, and scan my Docker images for vulnerabilities and malware.<p>
 
