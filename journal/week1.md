@@ -4,7 +4,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 | TASKS COMPLETED |
 | :-------------- |
-| 1. [Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers) |
+| 1. [Setting Up Docker Containers in the Gitpod Workspace](#docker-containers) |
 | 2. Setting Up The Backend of The Social Media Application |
 | 3. Setting Up The Frontend of The Social Media Application |
 | 4. Troubleshooting |
@@ -12,7 +12,9 @@ This week was my first time using containirzation. As something breifly touched 
 | 6. Container Security Considerations |
 | 7. Learning About Cloud Roles |
 
-## Setting Up Docker Containers in the Gitpod Workspace {#setting-up-docker-containers}
+
+
+## 1. Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
