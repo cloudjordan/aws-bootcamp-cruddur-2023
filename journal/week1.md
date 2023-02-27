@@ -5,7 +5,7 @@ This week was my first time using containirzation. As something breifly touched 
 | TASKS COMPLETED |
 | :-------------- |
 | 1. [Setting Up Docker Containers in the Gitpod Workspace](#docker-containers) |
-| 2. Setting Up The Backend of The Social Media Application |
+| 2. [Setting Up The Backend of The Social Media Application](#backend) |
 | 3. Setting Up The Frontend of The Social Media Application |
 | 4. Troubleshooting |
 | 5. Installing DynamoDB and PostgresSQL |
@@ -225,7 +225,7 @@ Now I have ports for the front end code and back end. With both ports unlocked/s
 <br>
 
 
-## 2. Setting Up The Backend of The Social Media Application
+## 2. Setting Up The Backend of The Social Media Application{#backend}
 
 After unlocking the port, clicking on the URL assigned to port 3000 opens up the frontend application. After creating user credentials and signing in, I clicked on the "**Notifications**" button in the side panel on the left. This took me to a page showing a 404 HTTP error code. 
 
