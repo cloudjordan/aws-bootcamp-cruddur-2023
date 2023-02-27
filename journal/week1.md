@@ -12,9 +12,9 @@ This week was my first time using containirzation. As something breifly touched 
 | 6. [Container Security Considerations](#security) |
 |  |
 
-[Heading IDs](#heading-ids)
+[Learning About Cloud Roles](#learning-about-cloud-roles)
 
-[Learning About Cloud Roles](#cloud)
+
 
 # 1.Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
@@ -392,7 +392,7 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 ## 4. Troubleshooting {#troubleshoot}
 
 some text
-## Heading IDs
+## Learning About Cloud Roles
 
 
 ## 5. Installing DynamoDB and PostgresSQL {#install}
@@ -405,7 +405,7 @@ some text
 some text
 
 
-## Learning About Cloud Roles
+
 
 some text
 
