@@ -3,7 +3,7 @@
 This week was my first time using containirzation. As something breifly touched on when I was studying for the AWS Cloud Practitioner exam, I was looking forward to getting hands on with this concept using Docker. The tasks I completed for this weeks homeworks are listed in the table below: 
 
 
-| TASKS COMPLETED |
+| TABLE OF CONTENTS |
 | :-------------- |
 | [Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace) |
 | [Setting Up The Backend of The Social Media Application](#setting-up-the-backend-of-the-social-media-application) |
