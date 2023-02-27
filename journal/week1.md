@@ -405,7 +405,13 @@ In the “NotificationsFeedPage.js” file, I added the code required to build t
 
 ## Installing DynamoDB and PostgresSQL
 
-some text
+To prepare for next weeks bootcamp session, I installed DynamoDB and PossgresSQL, I added their some code to the `services` section of the [docker-compose.yml](../docker-compose.yml). The code I added will do the following:
+
+1. Defines a service for Amazon DynamoDB Local.
+2. Defines a service for PostgreSQL.
+3. Defines a volume named db that uses the local driver to persist data between container runs.
+ 
+To automate the install of DB clients when Gitpod environment is launched, I added the required task to the [Gitpod.yml](../.gitpod.yml) file under tasks. 
 
 <br>
 
