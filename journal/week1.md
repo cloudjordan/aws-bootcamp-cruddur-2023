@@ -4,7 +4,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 | TASKS COMPLETED |
 | :-------------- |
-| [## 1. Setting Up Docker Containers in the Gitpod Workspace](#docker-containers) |
+| [## Setting Up Docker Containers in the Gitpod Workspace](#docker-containers) |
 | 2. [Setting Up The Backend of The Social Media Application](#backend) |
 | 3. [Setting Up The Frontend of The Social Media Application](#frontend) |
 | 4. [Troubleshooting](#troubleshoot) |
@@ -14,7 +14,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 
 
-## 1. Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
+## Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
