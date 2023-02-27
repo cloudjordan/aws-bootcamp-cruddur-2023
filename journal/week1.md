@@ -15,7 +15,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 [1. Setting Up Docker Containers in the Gitpod Workspace](#1.-setting-up-docker-containers-in-the-gitpod-workspace)
 
-[6. Container Security Considerations](#security)
+[Container Security Considerations](#container-security-considerations)
 
 # 1.Setting Up Docker Containers in the Gitpod Workspace
 
@@ -401,7 +401,7 @@ some text
 some text
 
 
-## 6. Container Security Considerations {#security}
+## Container Security Considerations
 
 some text
 
