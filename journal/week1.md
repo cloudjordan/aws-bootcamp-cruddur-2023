@@ -438,5 +438,28 @@ Here I've listed a summary of the things I learned during Ashish's bootcamp sess
 
 ## Learning About Cloud Roles
 
-some text
+Following on from the cloud sessions livestream, I completed the following tasks as part of my homework:
+
+Ask myself these 4 questions:
+
+1. **The job role I am aiming for is** DevOps Engineer
+2. **I will be succesful in this role because** I come from an IT background, already have some of the skills, and I understand the need for continuous learning in tech roles. 
+3. **The 5 skills I will learn are** Python (codeing/scripting), Cloud Formation (IaC), Containerization (Docker), CLI (Linux), CI/CD (AWS).
+4. **The skills I will NOT learn are** Azure, C#, Powershell 
+
+I have listed skills to avoid for now, because it is important to stay focused to actually make progress when learning new skills, and avoid analysis paralysis. 
+
+Looked at 5 job for junior DevOps Engineer to see what skills would be required:
+
+**The Job titles were:** Junior DevOps Engineer, DevOps Engineer and Cloud Engineer. 
+
+**The skills that consistently came up were:**
+
+1. Continious Integration / Continuous Development
+2. Scripting
+3. Linux
+4. Virtualization
+5. AWS
+
+This showed me that I am on the right track as all these skills are being covered in the bootcamp.
 
