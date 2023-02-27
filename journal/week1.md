@@ -12,7 +12,7 @@ This week was my first time using containirzation. As something breifly touched 
 | 6. Container Security Considerations |
 | 7. Learning About Cloud Roles |
 
-<h3 id="custom-id">My Great Heading</h3>
+
 
 ## 1. Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
@@ -225,7 +225,7 @@ Now I have ports for the front end code and back end. With both ports unlocked/s
 <br>
 
 
-## 2. Setting Up The Backend of The Social Media Application {#custom-id}
+## 2. Setting Up The Backend of The Social Media Application {#backend}
 
 After unlocking the port, clicking on the URL assigned to port 3000 opens up the frontend application. After creating user credentials and signing in, I clicked on the "**Notifications**" button in the side panel on the left. This took me to a page showing a 404 HTTP error code. 
 
