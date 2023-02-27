@@ -14,7 +14,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 [Heading IDs](#heading-ids)
 
-[7. Learning About Cloud Roles](#cloud)
+[Learning About Cloud Roles](#cloud)
 
 # 1.Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
@@ -405,7 +405,7 @@ some text
 some text
 
 
-## 7. Learning About Cloud Roles
+## Learning About Cloud Roles
 
 some text
 
