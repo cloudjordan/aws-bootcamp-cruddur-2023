@@ -389,9 +389,20 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 
 ## 4. Troubleshooting {#troubleshoot}
 
+some text
+
+
 ## 5. Installing DynamoDB and PostgresSQL {#install}
+
+some text
+
 
 ## 6. Container Security Considerations {#security}
 
+some text
+
+
 ## 7. Learning About Cloud Roles {#cloud}
+
+some text
 
