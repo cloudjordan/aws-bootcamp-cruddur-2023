@@ -13,11 +13,11 @@ This week was my first time using containirzation. As something breifly touched 
 
 [Learning About Cloud Roles](#learning-about-cloud-roles)
 
-[1. Setting Up Docker Containers in the Gitpod Workspace](#1.-setting-up-docker-containers-in-the-gitpod-workspace)
+[Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace)
 
 [Container Security Considerations](#container-security-considerations)
 
-# 1. Setting Up Docker Containers in the Gitpod Workspace
+# Setting Up Docker Containers in the Gitpod Workspace
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
