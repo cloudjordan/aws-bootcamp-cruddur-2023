@@ -17,7 +17,7 @@ This week was my first time using containirzation. As something breifly touched 
 
 [Container Security Considerations](#container-security-considerations)
 
-# 1.Setting Up Docker Containers in the Gitpod Workspace
+# 1. Setting Up Docker Containers in the Gitpod Workspace
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
