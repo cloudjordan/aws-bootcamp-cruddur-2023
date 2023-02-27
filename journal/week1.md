@@ -11,18 +11,8 @@ This week was my first time using containirzation. As something breifly touched 
 | 5. Installing DynamoDB and PostgresSQL |
 | 6. Container Security Considerations |
 | 7. Learning About Cloud Roles |
+
 ## Setting Up Docker Containers in the Gitpod Workspace {#setting-up-docker-containers}
-
-- [1. Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace)
-- [2. Setting Up The Backend of The Social Media Application](#setting-up-the-backend-of-the-social-media-application)
-- [3. Setting Up The Frontend of The Social Media Application](#setting-up-the-frontend-of-the-social-media-application)
-- [4. Troubleshooting](#troubleshooting)
-- [5. Installing DynamoDB and PostgresSQL](#installing-dynamodb-and-postgressql)
-- [6. Container Security Considerations](#container-security-considerations)
-- [7. Learning About Cloud Roles](#learning-about-cloud-roles)
-
-## 1. Setting Up Docker Containers in the Gitpod Workspace {#setting-up-docker-containers-in-the-gitpod-workspace}
-
 
 
 <p>With Docker installed in Gitpod, I created a new `Dockerfile` in the `backend-flask` folder and added the following code to it. <p>
