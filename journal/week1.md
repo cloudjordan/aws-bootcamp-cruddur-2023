@@ -10,11 +10,11 @@ This week was my first time using containirzation. As something breifly touched 
 | 4. [Troubleshooting](#troubleshoot) |
 | 5. [Installing DynamoDB and PostgresSQL](#install) |
 | 6. [Container Security Considerations](#security) |
-| [7. Learning About Cloud Roles](#cloud) |
+|  |
 
 [Heading IDs](#heading-ids)
 
-
+[7. Learning About Cloud Roles](#cloud)
 
 # 1.Setting Up Docker Containers in the Gitpod Workspace {#docker-containers}
 
