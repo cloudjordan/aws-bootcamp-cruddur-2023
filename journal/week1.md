@@ -6,10 +6,10 @@ This week was my first time using containirzation. As something breifly touched 
 | TASKS COMPLETED |
 | :-------------- |
 | [Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace) |
-| [Setting Up The Backend of The Social Media Application](#backend) |
-| [Setting Up The Frontend of The Social Media Application](#frontend) |
+| [Setting Up The Backend of The Social Media Application](#setting-up-the-backend-of-the-social-media-application) |
+| [Setting Up The Frontend of The Social Media Application](#setting-up-the-frontend-of-the-social-media-application) |
 | [Troubleshooting](#troubleshoot) |
-| [Installing DynamoDB and PostgresSQL](#install) |
+| [Installing DynamoDB and PostgresSQL](#installing-dynamodb-and-postgressql) |
 | [Container Security Considerations](#container-security-considerations) |
 | [Learning About Cloud Roles](#learning-about-cloud-roles) |
 
