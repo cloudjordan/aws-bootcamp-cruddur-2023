@@ -417,7 +417,22 @@ To automate the install of DB clients when Gitpod environment is launched, I add
 
 ## Container Security Considerations
 
-some text
+Here I've listed a summary of the things I learned during Ashish's bootcamp session for container security. 
+
+#### **Why I should care about security for containers** 
+
+- Designing an application or service with container security in mind can minimize the impact of a breach.
+- Containers enable fast deployment and deprovisioning of machines, so security needs to keep up with the same speed.
+
+#### ### **Security Best Practices**
+
+<p>To ensure the security of my containers, Its good practice for me to keep my software updated with the latest security patches, run Docker daemon and containers in non-root user mode, and scan my Docker images for vulnerabilities and malware.<p>
+
+<p>I could consider using a private registry and should avoid putting any sensitive information in my Docker files or images. To securely manage and share secrets across containers, I can use a Secret Management Service.<p>
+  
+<p>It's important to ensure the filesystem used by Docker is read-only to prevent unauthorized modification of data, and I should consider using separate databases for long-term storage.<p> 
+  
+<p>Using DevSecOps practices can help me build security into the application from the start. Finally, It is good practice to ensure all code is tested for vulnerabilities before it is used in production.<p>
 
 <br>
 
