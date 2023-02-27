@@ -395,6 +395,10 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 <p>I reran the docker-compose.yml “Compose Up” command by right-clicking on the docker-compose.yml file and selected the command. I then unlocked the ports, and clicked the link for the frontend port.<p> 
 
 <p>The Cruddur webpage opened, clicked on notifications button in the side panel of Cruddur, and could now see the page I was expecting.<p>
+  
+<p align="center">
+  <img src="assets/cruddur-notifications-page.png">
+</p>
 
 
 ## Installing DynamoDB and PostgresSQL
