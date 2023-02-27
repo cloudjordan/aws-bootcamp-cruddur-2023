@@ -388,13 +388,14 @@ In the “NotificationsFeedPage.js” file, I added the code required to build t
 There is a JavaScript file called “DesktopNavigation.js” in the [src/components](../frontend-react-js/src/components/DesktopNavigation.js) folder. Inside it shows that the notifications button in the Cruddur frontend, is already linked correctly.
 
 
-## 4. Troubleshooting {#troubleshoot}
+## Troubleshooting
 
 some text
+
 ## Learning About Cloud Roles
 
 
-## 5. Installing DynamoDB and PostgresSQL {#install}
+## Installing DynamoDB and PostgresSQL
 
 some text
 
