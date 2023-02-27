@@ -405,7 +405,7 @@ some text
 some text
 
 
-## 7. Learning About Cloud Roles {#cloud}
+## 7. Learning About Cloud Roles
 
 some text
-<a href="#heading-ids">Heading IDs</a>
+
