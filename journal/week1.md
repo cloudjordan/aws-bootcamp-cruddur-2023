@@ -383,6 +383,11 @@ In the explorer panel, inside frontend-react-js/src/pages created new javascript
   <img src="assets/NotificationsFeedPagesJSCSS.png">
 </p>
 
-In the “NotificationsFeedPage.js” file, I added the code required to build the notifications page. 
+In the “NotificationsFeedPage.js” file, I added the code required to build the [NotificationsFeedPage.js](../frontend-react-js/src/pages/NotificationsFeedPage.js)
+
+There is a JavaScript file called “DesktopNavigation.js” in the [src/components](../frontend-react-js/src/components/DesktopNavigation.js) folder. Inside it shows that the notifications button in the Cruddur frontend, is already linked correctly.
+
+
+## 4. Troubleshooting
 
 
