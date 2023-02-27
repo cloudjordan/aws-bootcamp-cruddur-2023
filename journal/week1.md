@@ -392,8 +392,6 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 
 some text
 
-## Learning About Cloud Roles
-
 
 ## Installing DynamoDB and PostgresSQL
 
@@ -405,7 +403,7 @@ some text
 some text
 
 
-
+## Learning About Cloud Roles
 
 some text
 
