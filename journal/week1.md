@@ -226,7 +226,7 @@ Now I have ports for the front end code and back end. With both ports unlocked/s
 <br>
 
 
-## 2. Setting Up The Backend of The Social Media Application {#backend}
+## Setting Up The Backend of The Social Media Application
 
 After unlocking the port, clicking on the URL assigned to port 3000 opens up the frontend application. After creating user credentials and signing in, I clicked on the "**Notifications**" button in the side panel on the left. This took me to a page showing a 404 HTTP error code. 
 
@@ -355,7 +355,7 @@ Then below that, I added the return function to return these results when the no
 <p>Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data.<p>
 <br>
 
-## 3. Setting Up The Frontend of The Social Media Application {#frontend}
+## Setting Up The Frontend of The Social Media Application
 
 In the `/frontend-react-js` folder, I opened up the app.js file and imported the following. As this imported file doesn't exist yet it's currently greyed out:
 ```
