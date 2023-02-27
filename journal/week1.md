@@ -6,11 +6,11 @@ This week was my first time using containirzation. As something breifly touched 
 | :-------------- |
 | 1. [Setting Up Docker Containers in the Gitpod Workspace](#docker-containers) |
 | 2. [Setting Up The Backend of The Social Media Application](#backend) |
-| 3. Setting Up The Frontend of The Social Media Application |
-| 4. Troubleshooting |
-| 5. Installing DynamoDB and PostgresSQL |
-| 6. Container Security Considerations |
-| 7. Learning About Cloud Roles |
+| 3. Setting Up The Frontend of The Social Media Application(#frontend) |
+| 4. Troubleshooting(#troubleshoot) |
+| 5. Installing DynamoDB and PostgresSQL(#install) |
+| 6. Container Security Considerations(#security) |
+| 7. Learning About Cloud Roles(#cloud) |
 
 
 
@@ -354,7 +354,7 @@ Then below that, I added the return function to return these results when the no
 <p>Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data.<p>
 <br>
 
-## 3. Setting Up The Frontend of The Social Media Application
+## 3. Setting Up The Frontend of The Social Media Application {#frontend}
 
 In the `/frontend-react-js` folder, I opened up the app.js file and imported the following. As this imported file doesn't exist yet it's currently greyed out:
 ```
@@ -387,6 +387,11 @@ In the “NotificationsFeedPage.js” file, I added the code required to build t
 There is a JavaScript file called “DesktopNavigation.js” in the [src/components](../frontend-react-js/src/components/DesktopNavigation.js) folder. Inside it shows that the notifications button in the Cruddur frontend, is already linked correctly.
 
 
-## 4. Troubleshooting
+## 4. Troubleshooting {#troubleshoot}
 
+## 5. Installing DynamoDB and PostgresSQL{#install}
+
+## 6. Container Security Considerations{#security}
+
+## 7. Learning About Cloud Roles{#cloud}
 
