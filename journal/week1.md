@@ -392,7 +392,7 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 ## 4. Troubleshooting {#troubleshoot}
 
 some text
-# Heading IDs
+## Heading IDs
 
 
 ## 5. Installing DynamoDB and PostgresSQL {#install}
