@@ -2,21 +2,18 @@
 
 This week was my first time using containirzation. As something breifly touched on when I was studying for the AWS Cloud Practitioner exam, I was looking forward to getting hands on with this concept using Docker. The tasks I completed for this weeks homeworks are listed in the table below: 
 
-| TASKS COMPLETED |
-| :-------------- |
-| 2. [Setting Up The Backend of The Social Media Application](#backend) |
-| 3. [Setting Up The Frontend of The Social Media Application](#frontend) |
-| 4. [Troubleshooting](#troubleshoot) |
-| 5. [Installing DynamoDB and PostgresSQL](#install) |
-|  |
-|  |
-
 
 | TASKS COMPLETED |
 | :-------------- |
 | [Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace) |
+| [Setting Up The Backend of The Social Media Application](#backend) |
+| [Setting Up The Frontend of The Social Media Application](#frontend) |
+| [Troubleshooting](#troubleshoot) |
+| [Installing DynamoDB and PostgresSQL](#install) |
 | [Container Security Considerations](#container-security-considerations) |
 | [Learning About Cloud Roles](#learning-about-cloud-roles) |
+
+
 
 # Setting Up Docker Containers in the Gitpod Workspace
 
