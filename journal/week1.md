@@ -352,8 +352,37 @@ Then below that, I added the return function to return these results when the no
  return results
 ```
 
-Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data. 
-
+<p>Now when I open up the backend port URL and append the `/api/activities/notifications` Returns the notifications endpoint data.<p>
+<br>
 
 ## 3. Setting Up The Frontend of The Social Media Application
+
+In the `/frontend-react-js` folder, I opened up the app.js file and imported the following. As this imported file doesn't exist yet it's currently greyed out:
+```
+import NotificationsFeedPage from './pages/NotificationsFeedPage';
+```
+
+Added the following code to the `const router = createBrowserRouter` that takes an array as it's argument. 
+
+```
+{
+    path: "/notifications",
+    element: <NotificationsFeedPage />
+},
+```
+
+```
+A router object is used to define the different paths and components that will be rendered when a user navigates to a certain URL in the application.
+
+The createBrowserRouter function takes an array of route objects as its argument, where each route object specifies a URL path and the React component that should be rendered when the user navigates to that path.
+```
+
+In the explorer panel, inside frontend-react-js/src/pages created new javascript files named `NotificationsFeedPage.js` and a new CSS file called `NotificationsFeedPage.css`.
+
+<p align="center">
+  <img src="assets/NotificationsFeedPagesJSCSS.png">
+</p>
+
+In the “NotificationsFeedPage.js” file, I added the code required to build the notifications page. 
+
 
