@@ -400,16 +400,19 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
   <img src="assets/cruddur-notifications-page.png">
 </p>
 
+<br>
 
 ## Installing DynamoDB and PostgresSQL
 
 some text
 
+<br>
 
 ## Container Security Considerations
 
 some text
 
+<br>
 
 ## Learning About Cloud Roles
 
