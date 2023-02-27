@@ -12,7 +12,8 @@ This week was my first time using containirzation. As something breifly touched 
 |  |
 
 
-
+| TASKS COMPLETED |
+| :-------------- |
 | [Setting Up Docker Containers in the Gitpod Workspace](#setting-up-docker-containers-in-the-gitpod-workspace) |
 | [Container Security Considerations](#container-security-considerations) |
 | [Learning About Cloud Roles](#learning-about-cloud-roles) |
