@@ -390,7 +390,11 @@ There is a JavaScript file called “DesktopNavigation.js” in the [src/compone
 
 ## Troubleshooting
 
-some text
+<p>My ports timed out and were missing from the ports tab in Gitpod. Here is how I troubleshooted it:<p>
+
+<p>I reran the docker-compose.yml “Compose Up” command by right-clicking on the docker-compose.yml file and selected the command. I then unlocked the ports, and clicked the link for the frontend port.<p> 
+
+<p>The Cruddur webpage opened, clicked on notifications button in the side panel of Cruddur, and could now see the page I was expecting.<p>
 
 
 ## Installing DynamoDB and PostgresSQL
