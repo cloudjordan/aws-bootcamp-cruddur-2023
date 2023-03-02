@@ -21,7 +21,6 @@ from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 # XRAY setting up the recorder and middleware for tracing
 xray_url = os.getenv("AWS_XRAY_URL")
 xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
-XRayMiddleware(app, xray_recorder)
 
 # Honeycomb imports -------------------
 from opentelemetry import trace
@@ -40,6 +39,8 @@ trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
 app = Flask(__name__)
+#XRAY -----------------
+XRayMiddleware(app, xray_recorder)
 
 # Initialize automatic instrumentation with Flask
 FlaskInstrumentor().instrument_app(app)
