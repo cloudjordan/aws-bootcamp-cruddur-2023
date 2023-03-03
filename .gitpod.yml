@@ -9,8 +9,9 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
   - name: react-js
-    command: 
+    init:
       cd frontend-react-js
+    command: 
       npm install
   - name: postgres
     init: |
