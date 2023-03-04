@@ -1,12 +1,4 @@
-FRONTEND_URL ="*" BACKEND_URL="*" docker run --rm -p 4567:4567 -it backend-flask
+export ROLLBAR_ACCESS_TOKEN='ea55fedc0b8144ab8e4e323cab058b0c'
 
-docker run --rm -p 4567:4567 -it backend-flask -e FRONTEND_URL ="*" -e BACKEND_URL="*" 
-
-aws xray create-group \
-   --group-name "Cruddur" \
-   --filter-expression "service(\"backend-flask\")"
-
-
-
-
+gp env ROLLBAR_ACCESS_TOKEN='ea55fedc0b8144ab8e4e323cab058b0c'
 
