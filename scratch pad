@@ -1,4 +1,0 @@
-export ROLLBAR_ACCESS_TOKEN='ea55fedc0b8144ab8e4e323cab058b0c'
-
-gp env ROLLBAR_ACCESS_TOKEN='ea55fedc0b8144ab8e4e323cab058b0c'
-
