@@ -41,8 +41,30 @@ I saved my Honeycomb API key to a my `HONEYCOMB_API_KEY` environment variable an
 
 I also set the required open telemetry environment variables for reaching the Honeycomb API endpoint and authenticating the sending of telemetry data from my application. These were also added to [docker-compose.yml](../docker-compose.yml).
 <br>
+<br>
 
 ## Instrumenting My Application With Honeycomb
+
+To setup instrumentation in my application with Python and Flask, I installed the required dependencies using my [requirements.txt](../backend-flask/requirements.txt) file.
+<br>
+<br>
+The next step was to add instrumentation and create and initialize a tracer in my [main](../backend-flask/app.py) flask file. This enabled data to be sent to Honeycomb. To do this I carried out the following steps:
+
+1. Added the imports from Honeycomb to my [app.py](../backend-flask/app.py) file.
+2. Added the code required to initialize tracing and an exporter that can send data to Honeycomb.
+3. Added the code required to initialize automatic instrumentation with Flask.
+
+#### Confirming the frontend and backend are reachable
+
+With dependencies installed for the frontend and backend, I launched my [docker-compose](../docker-compose.yml) environment and opened up the ports to confirm the the frontend and backend were reachable so that Honeycomb could receive the telemtry data. 
+
+#### Collecting Data in Honeycomb
+
+The dataset was automatically created when it arrived with the service name set in docker-compose. 
+
+
+<br>
+<br>
 
 ## Instrumenting My Application With AWS X-Ray
 
