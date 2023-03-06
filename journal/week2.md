@@ -67,6 +67,13 @@ The dataset was automatically created when it arrived with the service name set 
 </p>
 <br>
 
+After opening the dataset, I alos saw that I was succesful in receiving traces. Following this, I also hardcoded a traced span to mock what a realy one may look like. I did this in my [home_activities](../backend-flask/services/home_activities.py) file. I also experimented with Honeycomb queries, as an alternative way to view data. 
+
+<p align="center">
+<img src="assets/honeycomb-mockdata-span.png" >
+</p>
+<br>
+
 
 
 <br>
