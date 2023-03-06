@@ -36,7 +36,7 @@ After creating an environment in my Honeycomb account, I copied it's API key to 
 
 ## Setting Up Honeycomb Environment Variables in Gitpod
 
-<p>I saved my Honeycomb API key to a my `HONEYCOMB_API_KEY` environment variable and exported it. I also set the service name for the Honeycomb to the OTEL service environment variable `OTEL_SERVICE_NAME`. This will determine the service name in the spans that get sent from my application. I set this in my `docker-compose.yml` file.<p>
+<p>I saved my Honeycomb API key to a my `HONEYCOMB_API_KEY` environment variable and exported it. I also set the service name for the Honeycomb to the OTEL service environment variable `OTEL_SERVICE_NAME`. This will determine the service name in the spans that get sent from my application. I set this in my [docker-compose.yml](../docker-compose.yml) file.<p>
 
 ## Instrumenting My Application With Honeycomb
 
