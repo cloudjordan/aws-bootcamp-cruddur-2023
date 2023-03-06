@@ -13,7 +13,7 @@ For week 2 I completed the following tasks:
 | [Implementing Rollbar](#implementing-rollbar) |
 | [Building Security for Tracing in AWS](#building-security-for-tracing-in-aws) |
 
-
+<br>
 
 ## What is Distributed Tracing?
 
