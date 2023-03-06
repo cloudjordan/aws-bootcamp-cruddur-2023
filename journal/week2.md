@@ -54,13 +54,19 @@ The next step was to add instrumentation and create and initialize a tracer in m
 2. Added the code required to initialize tracing and an exporter that can send data to Honeycomb.
 3. Added the code required to initialize automatic instrumentation with Flask.
 
-#### Confirming the frontend and backend are reachable
+### ***Confirming the frontend and backend are reachable...***
 
 With dependencies installed for the frontend and backend, I launched my [docker-compose](../docker-compose.yml) environment and opened up the ports to confirm the the frontend and backend were reachable so that Honeycomb could receive the telemtry data. 
 
-#### Collecting Data in Honeycomb
+### ***Collecting Data in Honeycomb...***
 
 The dataset was automatically created when it arrived with the service name set in docker-compose. 
+
+<p align="center">
+<img src="assets/honeycomb-dataset.png" >
+</p>
+<br>
+
 
 
 <br>
