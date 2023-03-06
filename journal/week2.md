@@ -28,8 +28,11 @@ For week 2 I completed the following tasks:
 I have learned that segmenting observability environments is crucial for issue identification and diagnosis. Separating development and production allows clearer insights for optimization, although we're currently using just one for this bootcamp.
   
 After creating an environment in my Honeycomb account, I copied it's API key to the clipboard to assign to an environment variable in my Gitpod workspace. 
-  
 
+<p align="center">
+<img src="assets/environment-created.png" >
+</p>
+<br>
 
 ## Setting Up Honeycomb Environment Variables in Gitpod
 
