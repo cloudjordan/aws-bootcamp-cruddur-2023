@@ -1,8 +1,18 @@
+import os
 from datetime import datetime, timedelta, timezone
+# import XRay SDK libraries
 from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+
 
 class UserActivities:
-  def run(user_handle):
+
+  def __init__(self, request):
+        #self.xray_recorder = xray_recorder
+        self.request = request
+  
+  def run(self, user_handle):
     # Start a segment 
     # xray ---
     segment = xray_recorder.begin_segment('user_activities')
