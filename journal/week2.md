@@ -17,6 +17,12 @@ For week 2 I completed the following tasks:
 
 ## What is Distributed Tracing?
 
+<p>From my learning experience, observability is crucial for understanding complex distributed systems. The three pillars of observability, which are metrics, traces, and logs, provide a comprehensive approach to identifying and diagnosing issues.<p> 
+  
+<p>Logs alone are not sufficient for tracking events in large-scale distributed systems, and distributed tracing is needed to pinpoint the flow of data. Metrics allow me to see patterns over time, while logging provides timestamped events. Using these observability techniques, I can gain valuable insights into complex distributed systems and identify issues that may not be apparent through other means.<p>
+
+<br>
+
 ## Setting Up My Environment in Honeycomb
 
 ## Setting Up Honeycomb Environment Variables in Gitpod
