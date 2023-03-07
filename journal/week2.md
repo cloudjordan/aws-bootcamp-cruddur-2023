@@ -109,7 +109,14 @@ I could also view the traces in AWS CloudWatch X-Ray traces and could view detai
 </p>
 <br>
 
+I also setup a custom subsegment for the [user activities](../backend-flask/services/user_activities.py) page of our web application. 
 
+This was setup by adding the `@xray_recorder.capture('user_activities')` handle to the data_handle function in [app.py](../backend-flask/app.py) to capture a subsegment of the trace for user activities. Also initialzed and created an object from it's class and imported the xray middleware to make it traceable. 
+
+<p align="center">
+<img src="assets/aws-xray-mock-data-trace.png" >
+</p>
+<br>
 
 ## Sending Application Logs to CloudWatch
 
