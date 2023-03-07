@@ -52,6 +52,8 @@ The next step was to add instrumentation and create and initialize a tracer in m
 2. Added the code required to initialize tracing and an exporter that can send data to Honeycomb.
 3. Added the code required to initialize automatic instrumentation with Flask.
 
+<br>
+
 ### ***Confirming the frontend and backend are reachable...***
 
 With dependencies installed for the frontend and backend, I launched my [docker-compose](../docker-compose.yml) environment and opened up the ports to confirm the the frontend and backend were reachable so that Honeycomb could receive the telemtry data. 
@@ -79,6 +81,7 @@ X-Ray is an observability tool like Honeycomb. It uses a separate container, the
   
 After installing the [dependencies](../backend-flask/requirements.txt), I instrumented the Flask [app](../backend-flask/app.py) by configuring and enabling the X-Ray middleware to allow it to trace data from my app. 
 <br>
+<br>
 
 ### ***Adding X-Ray Sampling Rules Resources...***
 
@@ -90,6 +93,19 @@ Using AWS CLI I created a X-Ray Traces group in CloudWatch. I also ran the requi
 <img src="assets/aws-xray-sampling-rule.png" >
 </p>
 <br>
+
+### ***Setting up the X-Ray Daemon...***
+
+I set up the AWS X-Ray daemon in my Flask application. Using Docker Compose I added the x-ray-daemon service and configured its environment variables.
+<br>
+<br>
+After opening the backend network port and refreshing the page, I saw that the requests were being delivered to the X-Ray Daemon from the shells output. 
+<br>
+<br>
+I could also view the traces in AWS CloudWatch X-Ray traces and could view detailed information relating to my traces by clicking on the segment.
+<br>
+<br>
+
 
 
 ## Sending Application Logs to CloudWatch
