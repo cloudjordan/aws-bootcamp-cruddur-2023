@@ -19,13 +19,11 @@ For week 2 I completed the following tasks:
 
 <p>From my learning experience, observability is crucial for understanding complex distributed systems. The three pillars of observability, which are metrics, traces, and logs, provide a comprehensive approach to identifying and diagnosing issues.<p> 
   
-<p>Logs alone are not sufficient for tracking events in large-scale distributed systems, and distributed tracing is needed to pinpoint the flow of data. Metrics allow me to see patterns over time, while logging provides timestamped events. Using these observability techniques, I can gain valuable insights into complex distributed systems and identify issues that may not be apparent through other means.<p>
+<p>Using these observability techniques, I can gain valuable insights into complex distributed systems and identify issues that may not be apparent through other means.<p>
 
 <br>
 
 ## Setting Up My Environment in Honeycomb
-  
-I have learned that segmenting observability environments is crucial for issue identification and diagnosis. Separating development and production allows clearer insights for optimization, although we're currently using just one for this bootcamp.
   
 After creating an environment in my Honeycomb account, I copied it's API key to the clipboard to assign to an environment variable in my Gitpod workspace. 
 
