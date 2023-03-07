@@ -147,4 +147,29 @@ Next, I imported the required packages and added the configuration code to the [
 
 ## Building Security for Tracing in AWS
 
+Lastly, I took some notes on how this project could be taken further by implementing security into tracing in AWS. 
+
+### AWS Security Hub with Amazon Event Bridge:
+
+- AWS Security Hub can integrate with Amazon Event Bridge, which allows you to inform Security Hub of events it should take note of for further investigation.
+- Note that this integration is with CloudTrail, not CloudWatch.
+- AWS Security Hub and Amazon EventBridge for tracing events related to security incidents.
+
+### Security Incident and Event Management (SIEM):
+
+- SIEM can be used to create central observability dashboards with logs and metrics coming in.
+- This allows you to manage security incidents and events in a centralized location.
+
+### Event-Driven Architecture with AWS:
+
+- An event-driven architecture can be used to identify potential security issues.
+- This can be accomplished using serverless technology.
+
+### Auto-Remediation with Amazon Event Bridge and AWS Security Hub:
+
+- AWS Security Hub and Amazon Event Bridge can be used together for auto-remediation of security issues.
+
+### AWS Services for Threat Detection:
+
+- AWS offers multiple services for threat detection, including Amazon GuardDuty and third-party options.
 
