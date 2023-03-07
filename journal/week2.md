@@ -74,12 +74,15 @@ After opening the dataset, I alos saw that I was succesful in receiving traces. 
 </p>
 <br>
 
-
-
-<br>
-<br>
-
 ## Instrumenting My Application With AWS X-Ray
+
+X-Ray is an observability tool like Honeycomb. It uses a separate container, the X-Ray Daemon, to collect trace data from my application and send it to the X-Ray API for visualization. This ensures that the data collection does not impact the performance of my application
+<br>
+  
+After installing the [dependencies](../backend-flask/requirements.txt), I instrumented the Flask [app](../backend-flask/app.py) by configuring and enabling the X-Ray middleware to allow it to trace data from my app. 
+
+  
+
 
 ## Sending Application Logs to CloudWatch
 
