@@ -124,6 +124,7 @@ For CloudWatch log monitoring we used Watchtower. To get started I added the reu
 
 I then imported the CloudWatch packages into the Flask [app](../backend-flask/app.py) and cofigured the logger to use CloudWatch. The page I implemented logging for was [home activities](../backend-flask/services/home_activities.py). 
 <br>
+<br>
 Finally I added my AWS credentials as environment variables to docker-compose. I confirmed the backend remained reachable by launching the docker compose environment and opening the backend port. Once confirmed, in AWS I could see my log data was now reporting to CloudWatch.  
 
 <p align="center">
