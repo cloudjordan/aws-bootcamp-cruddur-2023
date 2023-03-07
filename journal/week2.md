@@ -120,7 +120,7 @@ This was setup by adding the `@xray_recorder.capture('user_activities')` handle 
 
 ## Sending Application Logs to CloudWatch
 
-For CloudWatch log monitoring we used Watchtower. To get started I added the reuired package to my [dependencies](../backend-flask/requirements.txt) file and installed it. 
+For CloudWatch log monitoring we used Watchtower. To get started I added the required package to my [dependencies](../backend-flask/requirements.txt) file and installed it. 
 
 I then imported the CloudWatch packages into the Flask [app](../backend-flask/app.py) and cofigured the logger to use CloudWatch. The page I implemented logging for was [home activities](../backend-flask/services/home_activities.py). 
 <br>
@@ -134,6 +134,8 @@ Finally I added my AWS credentials as environment variables to docker-compose. I
 
 
 ## Implementing Rollbar
+
+
 
 ## Building Security for Tracing in AWS
 
