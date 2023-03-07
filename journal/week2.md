@@ -103,7 +103,10 @@ After opening the backend network port and refreshing the page, I saw that the r
 <br>
 <br>
 I could also view the traces in AWS CloudWatch X-Ray traces and could view detailed information relating to my traces by clicking on the segment.
-<br>
+
+<p align="center">
+<img src="assets/aws-xray-api-traces-part2.png" >
+</p>
 <br>
 
 
