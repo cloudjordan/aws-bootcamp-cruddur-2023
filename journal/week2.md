@@ -135,6 +135,14 @@ Finally I added my AWS credentials as environment variables to docker-compose. I
 
 ## Implementing Rollbar
 
+For log monitoring and debugging, we also used Rollbar. After adding the required packages to my [dependencies](../backend-flask/requirements.txt) and installing them, I added the `ROLLBAR_ACCESS_TOKEN` to my environment. 
+
+Next, I imported the required packages and added the configuration code to the [app](../backend-flask/app.py). I added a test endpoint to see if code was working as intened. Afterwards, I launched the docker compose environment and opened the ports so we could test getting this test data into Rollbar. I then opened my Rollbar account and could see data was successfully received. 
+
+<p align="center">
+<img src="assets/rollbar-projects-helloworld-test-item.png" >
+</p>
+<br>
 
 
 ## Building Security for Tracing in AWS
