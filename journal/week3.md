@@ -59,9 +59,9 @@ Next I created a user in the user pool created earlier and setup Amplify authent
 
 ## Using Access Token with JWT Server Side
 
+In the [Sign-in](../frontend-react-js/src/pages/SigninPage.js) page, I stored the access token during sign-in and used it in a fetch request to the backend. However, the backend initially returned null for the access token until I logged in to my account in the frontend. Once I did this, the access token was fetched correctly.
 
-
-
+To validate the access token, I added Flask-AWSCognito as a dependency and created a new Python file called cognito_token_verification.py. I initialized a CognitoJWTToken object in app.py and added a method to extract the access token from the request headers. I then passed the extracted access token to CognitoJWTToken for verification and handled exceptions in the CognitoTokenVerification class. Once all the necessary code was implemented, I tested the authentication and successfully verified the access token, which was reflected in the debug logs.
 
 
 
