@@ -36,7 +36,7 @@ Next, I configured the cognito pool in the [frontend app](../frontend-react-js/s
 In [DesktopNavigation.js](../frontend-react-js/src/components/DesktopNavigation.js) and [DesktopSidebar.js](../frontend-react-js/src/components/DesktopSidebar.js), conditional statements are used to display components based on whether the user is logged in or not.
 <br>
 <br>
-`DesktopNavigation.js` displays components like notifications, profile, and message links, while `DesktopSidebar.js` displays trending, suggested, and join links. These components are displayed on either side of the feed when the user is logged in to cruddur.<p>
+`DesktopNavigation.js` displays components like notifications, profile, and message links, while `DesktopSidebar.js` displays trending, suggested, and join links. Different parts of these components are displayed on either side of the feed when the user is logged in to cruddur.<p>
 
 
 
