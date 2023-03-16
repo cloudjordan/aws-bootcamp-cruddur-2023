@@ -38,9 +38,21 @@ In [DesktopNavigation.js](../frontend-react-js/src/components/DesktopNavigation.
 <br>
 Inside [HomeFeedPage.js](../frontend-react-js/src/pages/HomeFeedPage.js) I imported the Amplify module, set the state of the user object and used a conditional statement to check whether the user is authenticated. 
 
-`DesktopNavigation.js` displays components like notifications, profile, and message links, while `DesktopSidebar.js` displays trending, suggested, and join links. Different parts of these components are displayed on either side of the feed when the user is logged in to cruddur.<p>
+`DesktopNavigation.js` displays components like notifications, profile, and message links, while `DesktopSidebar.js` displays trending, suggested, and join links. Different parts of these components are displayed on either side of the feed when the user is logged in to cruddur. 
 
 I also made changes to the [Sign-in](../frontend-react-js/src/pages/SigninPage.js) and [Sign-up](frontend-react-js/src/pages/SignupPage.js) pages so the pages are able to authenticate with Amplify. 
+  
+Next I created a user in the user pool created earlier and setup Amplify authentication in the following JavaScript files to add the required fuctionality to these pages. This allows for account creation and recovery: 
+
+- [Confirmation Page](../frontend-react-js/src/pages/ConfirmationPage.js) 
+- [Recover Page](../frontend-react-js/src/pages/RecoverPage.js) 
+
+
+<p align="center">
+<img src="assets/user-pool-user-created.png" >
+</p>
+<br>
+
 
 
 
