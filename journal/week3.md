@@ -11,7 +11,7 @@ For week 3 I completed the following tasks:
 
 ## Configuring AWS Cognito
 
-To configure the web application with login and signup features, we used AWS Cognito user pools. Using a user pool ID, I created a user account. Here are some of the key configurations I made for the account:
+To configure the web application with login and signup features, we used AWS Cognito user pools. Here are some of the key configuration requirements I made for the account:
 
 - Used email address for username sign in option.
 - Enabled self-service so the user can reset their own password if recovery is needed. 
