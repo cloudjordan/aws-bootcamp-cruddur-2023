@@ -31,6 +31,14 @@ To get started with Amplify, I first added the lirbabry to the list of dependenc
 
 Next, I configured the cognito pool in the [frontend app](../frontend-react-js/src/App.js ) by importing the Amplify package and adding the configuration code. The application is using environmental variables from my [docker-compose.yml](../docker-compose.yml) file to configure the behavior of the AWS Amplify library.
 
+### ***Conditionally showing components based on authentication status...***
+
+In [DesktopNavigation.js](../frontend-react-js/src/components/DesktopNavigation.js) and [DesktopSidebar.js](../frontend-react-js/src/components/DesktopSidebar.js), conditional statements are used to display components based on whether the user is logged in or not.
+<br>
+<br>
+`DesktopNavigation.js` displays components like notifications, profile, and message links, while `DesktopSidebar.js` displays trending, suggested, and join links. These components are displayed on either side of the feed when the user is logged in to cruddur.<p>
+
+
 
 
 
