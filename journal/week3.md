@@ -13,11 +13,16 @@ For week 3 I completed the following tasks:
 
 To configure the web application with login and signup features, we used AWS Cognito user pools. Using a user pool ID, I created a user account. Here are some of the key configurations I made for the account:
 
-- a
-- a
-- a
+- Used email address for username sign in option.
+- Enabled self-service so the user can reset their own password if recovery is needed. 
+- Disabled Cognito Hosted UI as we are using our web application's UI.
+- Enabled pulbic app client to call unauthenticated API operations.
 
 
 ## Configuring AWS Amplify
+
+
+
+
 
 ## Using Access Token with JWT Server Side
