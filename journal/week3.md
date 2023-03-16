@@ -29,7 +29,7 @@ To configure the web application with login and signup features, we used AWS Cog
 
 To get started with Amplify, I first added the lirbabry to the list of dependencies in [package.json](../frontend-react-js/package.json) using `npm i aws-amplify --save`. 
 
-Next, I configured the cognito pool in the [frontend app](../frontend-react-js/src/App.js ) by importing the Amplify package and adding the configuration code. 
+Next, I configured the cognito pool in the [frontend app](../frontend-react-js/src/App.js ) by importing the Amplify package and adding the configuration code. The application is using environmental variables from my [docker-compose.yml](../docker-compose.yml) file to configure the behavior of the AWS Amplify library.
 
 
 
@@ -38,7 +38,7 @@ Next, I configured the cognito pool in the [frontend app](../frontend-react-js/s
 
 
 
-delete this -
+
 
 
 
