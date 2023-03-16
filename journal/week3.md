@@ -19,6 +19,12 @@ To configure the web application with login and signup features, we used AWS Cog
 - Enabled pulbic app client to call unauthenticated API operations.
 
 
+<p align="center">
+<img src="assets/aws-cognito-user-pool-created.png" >
+</p>
+<br>
+
+
 ## Configuring AWS Amplify
 
 
@@ -26,3 +32,10 @@ To configure the web application with login and signup features, we used AWS Cog
 
 
 ## Using Access Token with JWT Server Side
+
+
+
+delete this -
+
+
+[docker-compose.yml](../docker-compose.yml)
