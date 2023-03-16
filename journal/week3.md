@@ -27,6 +27,8 @@ To configure the web application with login and signup features, we used AWS Cog
 
 ## Configuring AWS Amplify
 
+To get started with Amplify, I first added the lirbabry to the list of dependencies in [package.json](../frontend-react-js/package.json) using `npm i aws-amplify --save`. 
+
 
 
 
@@ -38,4 +40,4 @@ To configure the web application with login and signup features, we used AWS Cog
 delete this -
 
 
-[docker-compose.yml](../docker-compose.yml)
+
